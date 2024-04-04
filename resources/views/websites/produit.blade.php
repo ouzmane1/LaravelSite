@@ -59,7 +59,7 @@ Page produit
                                 <div class="col-xl-4 col-md-6 col-lg-6 col-sm-6">
                                     <div class="product-wrap mb-25 scroll-zoom">
                                         <div class="product-img">
-                                            <a href="{{route('website.product-detail')}}">
+                                            <a href="{{--{{route('website.product-detail')}}--}}">
                                                 <img class="default-img" src="{{asset("images/products/".$product->photo1)}}" alt="">
                                                 <img class="hover-img" src="{{asset("images/products/".$product->photo2)}}" alt="">
                                             </a>
@@ -182,7 +182,8 @@ Page produit
                             </form>
                         </div>
                     </div>
-                    <div class="sidebar-widget">
+
+                    {{-- <div class="sidebar-widget">
                         <h4 class="pro-sidebar-title">Refine By </h4>
                         <div class="sidebar-widget-list mt-30">
                             <ul>
@@ -289,7 +290,7 @@ Page produit
                                 <li><a href="#">Fashion</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
         </div>

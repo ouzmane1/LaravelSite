@@ -32,7 +32,16 @@ class WebsiteController extends Controller
     }
 
     public function DetailProduit(){
-        return view('websites.product-detail');
+        $products= Product::all();
+        return view('websites.product-detail',compact("products"));
+    }
+
+    public function Inscription(){
+        return view('websites.register');
+    }
+
+    public function Connecter(){
+        return view('websites.login');
     }
 
     //si votre methode reçoit des parametres à partir d'un formulaire

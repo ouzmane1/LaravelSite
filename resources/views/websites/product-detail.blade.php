@@ -20,12 +20,14 @@ Detail produit
 <div class="shop-area pt-100 pb-100">
     <div class="container">
         <div class="row">
+            @foreach ($products as $product)
+
             <div class="col-lg-6 col-md-6">
                 <div class="product-details">
                     <div class="product-details-img">
                         <div class="tab-content jump">
                             <div id="shop-details-1" class="tab-pane large-img-style">
-                                <img src="assets/img/product-details/large-1.jpg" alt="">
+                                <img src="{{asset('images/products/'.$product->photo1)}}" alt="">
 
                                 <div class="img-popup-wrap">
                                     <a class="img-popup" href="assets/img/product-details/b-large-1.jpg"><i class="pe-7s-expand1"></i></a>
@@ -106,6 +108,7 @@ Detail produit
                         <div class="pro-details-cart btn-hover">
                             <a href="#">Add To Cart</a>
                         </div>
+                        @endforeach
                         {{-- <div class="pro-details-wishlist">
                             <a href="#"><i class="fa fa-heart-o"></i></a>
                         </div>

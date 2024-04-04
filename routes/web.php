@@ -3,9 +3,11 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoriesController;
+use App\Http\Controllers\CustomersController;
 use App\Http\Controllers\PanierController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\WebsiteController;
+use App\Http\Controllers\OrderController;
 
 
 /*
@@ -40,6 +42,8 @@ Route::resource('products',ProductsController::class);//->middleware("auth");// 
 // detail produit
 Route::get('/detail-produit', [WebsiteController::class,'DetailProduit'])->name('website.product-detail');
 
+Route::get('/inscription',[WebsiteController::class,'Inscription'])->name('websites.inscription');
+Route::get('/connexion',[WebsiteController::class,'Connecter'])->name('websites.connexion');
 
 // route panier
 Route::post("panier/addToCard", [PanierController::class,'addToCard'])->name('panier.addToCard');
@@ -53,3 +57,6 @@ Route::get('panier:vide', [PanierController::class,'viderPanier'])->name('panier
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+Route::resource('orders',OrderController::class);
+Route::resource('customers',CustomersController::class);

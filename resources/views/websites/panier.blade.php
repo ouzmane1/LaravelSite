@@ -72,7 +72,7 @@ Panier
                                     <a href="{{route('websites.produit')}}">Continue Shopping</a>
                                 </div>
                                 <div class="cart-clear">
-                                    <button>Update Shopping Cart</button>
+                                    {{-- <button>Update Shopping Cart</button> --}}
                                     <a href="{{route('panier.viderPanier')}}">Clear Shopping Cart</a>
                                 </div>
                             </div>
@@ -80,7 +80,8 @@ Panier
                     </div>
                 </form>
                 <div class="row">
-                    <div class="col-lg-4 col-md-6">
+
+                    {{-- <div class="col-lg-4 col-md-6">
                         <div class="cart-tax">
                             <div class="title-wrap">
                                 <h4 class="cart-bottom-title section-bg-gray">Estimate Shipping And Tax</h4>
@@ -136,7 +137,7 @@ Panier
                                 </form>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                     <div class="col-lg-4 col-md-12">
                         <div class="grand-totall">
                             <div class="title-wrap">

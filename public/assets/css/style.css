@@ -2125,7 +2125,10 @@ a.default-btn {
   }
 }
 .logo {
-  margin-top: 32px;
+  margin-top: 15px;
+}
+.logo .img{
+    width: 70px;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .logo {
@@ -4189,6 +4192,7 @@ a.default-btn {
   animation-delay: 1s;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  color: #ffff;
 }
 .owl-item.active .slider-animated-1 h1 {
   -webkit-animation-delay: 1.3s;
@@ -4207,6 +4211,7 @@ a.default-btn {
   animation-delay: 1.5s;
   -webkit-animation-name: fadeInUp;
   animation-name: fadeInUp;
+  color: #ffff;
 }
 .owl-item.active .slider-animated-1 a {
   -webkit-animation-delay: 1.6s;

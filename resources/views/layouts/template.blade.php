@@ -51,7 +51,6 @@
 @yield('contenue')
 
 
-
 <!-- debut footer area  -->
 @include('layouts.footer')
 <!-- fin footer area  -->

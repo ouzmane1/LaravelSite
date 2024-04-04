@@ -4,7 +4,7 @@
 
 
         <!-- jquery validation -->
-        <div class="card card-primary">
+        <div class="card card-secondary">
           <div class="card-header">
             <h3 class="card-title">Ajouter nouvelle Categorie </h3>
           </div>
@@ -26,7 +26,7 @@
             </div>
             <!-- /.card-body -->
             <div class="card-footer">
-              <button type="submit" class="btn btn-primary">Ajouter</button>
+              <button type="submit" class="btn btn-success">Ajouter</button>
               <button type="reset" class="btn btn-secondary">Annuler</button>
             </div>
           </form>

@@ -86,7 +86,43 @@
                 </a>
               </li>
             </ul>
-          </li>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Client
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('customers.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Liste client</p>
+                </a>
+              </li>
+            </ul>
+        </li>
+
+        <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Commande
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{route('orders.index')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Liste commandes</p>
+                </a>
+              </li>
+            </ul>
+        </li>
 
       </ul>
     </nav>

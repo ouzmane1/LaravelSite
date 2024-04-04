@@ -4,7 +4,7 @@
 
 
         <!-- jquery validation -->
-        <div class="card card-primary">
+        <div class="card card-secondary">
           <div class="card-header">
             <h3 class="card-title">Ajouter nouvelle Produit </h3>
           </div>
