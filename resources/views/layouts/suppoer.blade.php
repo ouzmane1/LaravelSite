@@ -1,4 +1,4 @@
-<div class="suppoer-area pt-70 pb-60 hm9-section-padding bg-img" style="background-image:url(assets/img/bg/pattern-1.png);">
+{{-- <div class="suppoer-area pt-70 pb-60 hm9-section-padding bg-img" style="background-image:url(assets/img/bg/pattern-1.png);">
     <div class="container-fluid padding-10-row-col">
         <div class="row">
             <div class="col-lg-4 col-md-6 col-sm-6">
@@ -36,4 +36,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}

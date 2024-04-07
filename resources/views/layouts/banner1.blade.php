@@ -1,4 +1,4 @@
-<div class="banner-area">
+{{-- <div class="banner-area">
     <div class="container-fluid p-0">
         <div class="row g-0">
             <div class="col-lg-6 col-md-6">
@@ -23,4 +23,4 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}

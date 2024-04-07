@@ -11366,46 +11366,48 @@ a.default-btn {
     left: 60%;
   }
 }
-.single-banner .banner-content-26 span {
+/* .single-banner .banner-content-26 span {
   font-size: 18px;
-  color: #ed59a0;
+  color: #B028D7;
   display: block;
-}
+} */
 .single-banner .banner-content-26 h1 {
-  font-size: 55px;
-  color: #ed59a0;
+  font-size: 25px;
+  color: #B028D7;
   font-weight: bold;
   margin: 23px 0 21px;
   text-transform: uppercase;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-banner .banner-content-26 h1 {
-    font-size: 42px;
+    font-size: 22px;
     margin: 15px 0 15px;
   }
 }
 @media only screen and (max-width: 767px) {
   .single-banner .banner-content-26 h1 {
-    font-size: 42px;
+    font-size: 22px;
     margin: 15px 0 15px;
   }
 }
 .single-banner .banner-content-26 p {
-  font-size: 24px;
+  font-size: 18px;
   letter-spacing: 1.8px;
-  color: #fff;
+  color: #000;
   margin: 0 0 37px;
 }
+
 .single-banner .banner-content-26 .banner-cake-btn-1 a {
   display: inline-block;
   color: #ffffff;
-  background-color: #ed59a0;
+  background-color: #000;
   line-height: 1;
   border-radius: 50px;
   padding: 12px 33px;
   z-index: 9;
 }
-.single-banner .banner-content-26-2 h1 {
+
+/* .single-banner .banner-content-26-2 h1 {
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -11454,7 +11456,7 @@ a.default-btn {
 .single-banner .banner-content-26-2 .banner-cake-btn-2 a:hover {
   border: 2px solid #a749ff;
   color: #a749ff;
-}
+} */
 .single-banner .banner-content-33 {
   position: absolute;
   left: 50px;
