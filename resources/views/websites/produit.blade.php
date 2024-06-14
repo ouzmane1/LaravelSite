@@ -39,14 +39,14 @@ Page produit
                         </div>
                         <p>Showing 1–12 of 20 result</p>
                     </div>
-                    <div class="shop-tab nav">
+                    {{-- <div class="shop-tab nav">
                         <a class="active" href="#shop-1" data-bs-toggle="tab">
                             <i class="fa fa-table"></i>
                         </a>
                         <a href="#shop-2" data-bs-toggle="tab">
                             <i class="fa fa-list-ul"></i>
                         </a>
-                    </div>
+                    </div> --}}
                 </div>
                 <div class="shop-bottom-area mt-35">
                     <div class="tab-content jump">
@@ -75,7 +75,7 @@ Page produit
                                                         <input type="hidden" name="price" value="{{$product->price}}">
                                                         <input type="hidden" name="photo1" value="{{$product->photo1}}">
                                                         <input type="hidden" name="qte" value="1">
-                                                        <button type="submit" title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
+                                                        <button type="submit" title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Ajouter</a>
                                                     </form>
                                                 </div>
                                                 <div class="pro-same-action pro-quickview">
@@ -85,15 +85,15 @@ Page produit
                                         </div>
                                         <div class="product-content text-center">
                                             <h3><a href="product-details.html">{{$product->name}}</a></h3>
-                                            <div class="product-rating">
+                                            {{-- <div class="product-rating">
                                                 <i class="fa fa-star-o yellow"></i>
                                                 <i class="fa fa-star-o yellow"></i>
                                                 <i class="fa fa-star-o yellow"></i>
                                                 <i class="fa fa-star-o"></i>
                                                 <i class="fa fa-star-o"></i>
-                                            </div>
-                                            <div class="product-price">
-                                                <span>$ {{$product->price}}</span>
+                                            </div> --}}
+                                            <div class="pt-2 product-price">
+                                                <span>€ {{$product->price}}</span>
                                                 {{-- <span class="old">$ 60.00</span> --}}
                                             </div>
                                         </div>
@@ -104,7 +104,7 @@ Page produit
                             </div>
                         </div>
 
-                        <div id="shop-2" class="tab-pane">
+                        {{-- <div id="shop-2" class="tab-pane">
                             <div class="shop-list-wrap mb-30">
                                 <div class="row">
 
@@ -125,7 +125,7 @@ Page produit
                                             <h3><a href="#">{{$product->name}}</a></h3>
                                             <div class="product-list-price">
                                                 <span>$ {{$product->price}}</span>
-                                                {{-- <span class="old">$ 90.00</span> --}}
+
                                             </div>
                                             <div class="rating-review">
                                                 <div class="product-list-rating">
@@ -135,7 +135,6 @@ Page produit
                                                     <i class="fa fa-star-o"></i>
                                                     <i class="fa fa-star-o"></i>
                                                 </div>
-                                                {{-- <a href="#">3 Reviews</a> --}}
                                             </div>
                                             <p>{{$product->description}} </p>
                                             <div class="shop-list-btn btn-hover">
@@ -148,7 +147,6 @@ Page produit
                                                     <input type="hidden" name="qte" value="1">
                                                     <button type="submit" title="Add To Cart" href="#"><i class="pe-7s-cart"></i> Add to cart</a>
                                                 </form>
-                                                {{-- <a href="#">ADD TO CART</a> --}}
                                             </div>
                                         </div>
                                     </div>
@@ -157,16 +155,16 @@ Page produit
 
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
-                    <div class="pro-pagination-style text-center mt-30">
+                    {{-- <div class="pro-pagination-style text-center mt-30">
                         <ul>
                             <li><a class="prev" href="#"><i class="fa fa-angle-double-left"></i></a></li>
                             <li><a class="active" href="#">1</a></li>
                             <li><a href="#">2</a></li>
                             <li><a class="next" href="#"><i class="fa fa-angle-double-right"></i></a></li>
                         </ul>
-                    </div>
+                    </div> --}}
                 </div>
             </div>
             <div class="col-lg-3">
@@ -174,123 +172,16 @@ Page produit
                     <div class="sidebar-widget">
                         <h4 class="pro-sidebar-title">Search </h4>
                         <div class="pro-sidebar-search mb-50 mt-25">
-                            <form class="pro-sidebar-search-form" action="#">
-                                <input type="text" placeholder="Search here...">
-                                <button>
+                            <form class="pro-sidebar-search-form" action="">
+                                <input type="text" name="q">
+                                <button type="submit">
                                     <i class="pe-7s-search"></i>
                                 </button>
                             </form>
                         </div>
                     </div>
 
-                    {{-- <div class="sidebar-widget">
-                        <h4 class="pro-sidebar-title">Refine By </h4>
-                        <div class="sidebar-widget-list mt-30">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox"> <a href="#">On Sale <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">New <span>4</span></a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">In Stock <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-45">
-                        <h4 class="pro-sidebar-title">Filter By Price </h4>
-                        <div class="price-filter mt-10">
-                            <div class="price-slider-amount">
-                                <input type="text" id="amount" name="price"  placeholder="Add Your Price" />
-                            </div>
-                            <div id="slider-range"></div>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-50">
-                        <h4 class="pro-sidebar-title">Colour </h4>
-                        <div class="sidebar-widget-list mt-20">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Green <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Cream <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Blue <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">Black <span>4</span> </a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-40">
-                        <h4 class="pro-sidebar-title">Size </h4>
-                        <div class="sidebar-widget-list mt-20">
-                            <ul>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">XL</a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">L</a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">SM</a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="sidebar-widget-list-left">
-                                        <input type="checkbox" value=""> <a href="#">XXL</a>
-                                        <span class="checkmark"></span>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sidebar-widget mt-50">
-                        <h4 class="pro-sidebar-title">Tag </h4>
-                        <div class="sidebar-widget-tag mt-25">
-                            <ul>
-                                <li><a href="#">Clothing</a></li>
-                                <li><a href="#">Accessories</a></li>
-                                <li><a href="#">For Men</a></li>
-                                <li><a href="#">Women</a></li>
-                                <li><a href="#">Fashion</a></li>
-                            </ul>
-                        </div>
-                    </div> --}}
+
                 </div>
             </div>
         </div>

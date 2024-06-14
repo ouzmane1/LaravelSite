@@ -13,7 +13,7 @@ Page contact
                 <li>
                     <a href="{{ route('websites.accueil')}}">Accueil</a>
                 </li>
-                <li class="active">Contact us</li>
+                <li class="active">Contact</li>
             </ul>
         </div>
     </div>
@@ -21,9 +21,9 @@ Page contact
 
 <div class="contact-area pt-100 pb-100">
     <div class="container">
-        <div class="contact-map mb-10">
+        {{-- <div class="contact-map mb-10">
             <div id="map"></div>
-        </div>
+        </div> --}}
         <div class="custom-row-2">
             <div class="col-lg-4 col-md-5">
                 <div class="contact-info-wrap">
@@ -32,8 +32,8 @@ Page contact
                             <i class="fa fa-phone"></i>
                         </div>
                         <div class="contact-info-dec">
-                            <p>+012 345 678 102</p>
-                            <p>+012 345 678 102</p>
+                            <p>+33 0 00 00 00 00</p>
+                            <p>+33 0 00 00 00 00</p>
                         </div>
                     </div>
                     <div class="single-contact-info">
@@ -41,8 +41,8 @@ Page contact
                             <i class="fa fa-globe"></i>
                         </div>
                         <div class="contact-info-dec">
-                            <p><a href="#">urname@email.com</a></p>
-                            <p><a href="#">urwebsitenaem.com</a></p>
+                            <p><a href="#">myname@email.com</a></p>
+                            <p><a href="#">mywebsite.com</a></p>
                         </div>
                     </div>
                     <div class="single-contact-info">
@@ -50,17 +50,14 @@ Page contact
                             <i class="fa fa-map-marker"></i>
                         </div>
                         <div class="contact-info-dec">
-                            <p>Address goes here, </p>
-                            <p>street, Crossroad 123.</p>
+                            <p>Address, </p>
+                            <p>Postal, Commune.</p>
                         </div>
                     </div>
                     <div class="contact-social text-center">
-                        <h3>Follow Us</h3>
+                        <h3>Suivez nous</h3>
                         <ul>
                             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-pinterest-p"></i></a></li>
-                            <li><a href="#"><i class="fa fa-tumblr"></i></a></li>
-                            <li><a href="#"><i class="fa fa-vimeo"></i></a></li>
                             <li><a href="#"><i class="fa fa-twitter"></i></a></li>
                         </ul>
                     </div>
@@ -69,7 +66,7 @@ Page contact
             <div class="col-lg-8 col-md-7">
                 <div class="contact-form">
                     <div class="contact-title mb-30">
-                        <h2>Get In Touch</h2>
+                        <h2>Contacter nous</h2>
                     </div>
                     <form class="contact-form-style" id="contact-form" action="{{route('websites.save')}}" method="post">
                         <div class="row">
@@ -86,7 +83,7 @@ Page contact
                                 <input name="sujet" placeholder="Sujet*" type="text">
                             </div>
                             <div class="col-lg-12">
-                                <textarea name="message" placeholder="Your Message*"></textarea>
+                                <textarea name="message" placeholder="Message*"></textarea>
                                 <button class="submit" type="submit">ENVOYER</button>
                                 <button class="reset" type="reset">ANNULER</button>
 

@@ -36,6 +36,7 @@ Route::middleware(['auth'])->group( function(){
 
 Route::resource('categories',CategoriesController::class);//->middleware("auth");// elle genere 7 route
 Route::resource('products',ProductsController::class);//->middleware("auth");// elle genere 7 route
+// Route::get("/account",[WebsiteController::class,'Account'])->name('website.account');
 
 });
 
@@ -44,6 +45,8 @@ Route::get('/detail-produit', [WebsiteController::class,'DetailProduit'])->name(
 
 Route::get('/inscription',[WebsiteController::class,'Inscription'])->name('websites.inscription');
 Route::get('/connexion',[WebsiteController::class,'Connecter'])->name('websites.connexion');
+
+Route::get("/account",[WebsiteController::class,'Account'])->name('website.account');
 
 // route panier
 Route::post("panier/addToCard", [PanierController::class,'addToCard'])->name('panier.addToCard');

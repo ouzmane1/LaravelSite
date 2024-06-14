@@ -18,6 +18,8 @@ class WebsiteController extends Controller
 
     public function Produit(){
         // dd(session()->get("panier"));
+        // $q = request()->input("q");
+        // $products = Product::where('name', 'like',"$q");
         $products = Product::all();
         return view("websites.produit",compact("products"));
     }
@@ -42,6 +44,9 @@ class WebsiteController extends Controller
 
     public function Connecter(){
         return view('websites.login');
+    }
+    public function Account(){
+        return view('websites.account');
     }
 
     //si votre methode reçoit des parametres à partir d'un formulaire

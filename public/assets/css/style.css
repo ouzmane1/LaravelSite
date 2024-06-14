@@ -2550,7 +2550,8 @@ a.default-btn {
   font-size: 24px;
 }
 .header-right-wrap .same-style.cart-wrap {
-  margin-left: 12px;
+  margin-left: 30px;
+  margin-right: 12px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .header-right-wrap .same-style.cart-wrap {
@@ -10037,7 +10038,7 @@ a.default-btn {
 /*-------- 8. Footer style  -----*/
 .copyright .footer-logo {
   margin-bottom: 12px;
-  margin-top: 41px;
+  /* margin-top: 41px; */
 }
 @media only screen and (max-width: 767px) {
   .copyright .footer-logo {

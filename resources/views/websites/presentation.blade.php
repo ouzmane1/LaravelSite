@@ -11,7 +11,7 @@ Page presentation
                 <li>
                     <a href="{{ route('websites.accueil')}}">Accueil</a>
                 </li>
-                <li class="active">About us </li>
+                <li class="active">About </li>
             </ul>
         </div>
     </div>
@@ -20,57 +20,16 @@ Page presentation
 <div class="welcome-area pt-100 pb-95">
     <div class="container">
         <div class="welcome-content text-center">
-            <h5>Who Are We</h5>
-            <h1>Welcome To Flone</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt labor et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commo consequat irure </p>
+            <h5>QUI SOMMES NOUS</h5>
+            <h1>BIENVENUE A <span style="color: #B028D7">LAMICOSHOP</span></h1>
+            <p>Bienvenue sur <span style="color: #B028D7">LAMICOSHOP</span>, votre destination en ligne pour tout ce qui concerne l'informatique ! Que vous soyez un passionné de technologie ou un professionnel à la recherche des derniers équipements, nous avons tout ce dont vous avez besoin pour satisfaire vos besoins informatiques.</p>
         </div>
     </div>
 </div>
 
-<div class="funfact-area bg-gray-3 pt-100 pb-70">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-count text-center mb-30">
-                    <div class="count-icon">
-                        <i class="pe-7s-portfolio"></i>
-                    </div>
-                    <h2 class="count">360</h2>
-                    <span>project done</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-count text-center mb-30">
-                    <div class="count-icon">
-                        <i class="pe-7s-cup"></i>
-                    </div>
-                    <h2 class="count">690</h2>
-                    <span>cups of coffee</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-count text-center mb-30">
-                    <div class="count-icon">
-                        <i class="pe-7s-light"></i>
-                    </div>
-                    <h2 class="count">420</h2>
-                    <span>branding</span>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-6">
-                <div class="single-count text-center mb-30 mrgn-none">
-                    <div class="count-icon">
-                        <i class="pe-7s-smile"></i>
-                    </div>
-                    <h2 class="count">100</h2>
-                    <span>happy clients</span>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="team-area pt-95 pb-70">
+
+{{-- <div class="team-area pt-95 pb-70">
     <div class="container">
         <div class="section-title-2 text-center mb-60">
             <h2>Team Members</h2>
@@ -175,28 +134,8 @@ Page presentation
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 
-<div class="brand-logo-area pb-100 about-brand-logo">
-    <div class="container">
-        <div class="brand-logo-active owl-carousel owl-dot-none">
-            <div class="single-brand-logo">
-                <img src="{{asset('assets/img/brand-logo/barnd-logo-1.png" alt="">
-            </div>
-            <div class="single-brand-logo">
-                <img src="{{asset('assets/img/brand-logo/barnd-logo-2.png" alt="">
-            </div>
-            <div class="single-brand-logo">
-                <img src="{{asset('assets/img/brand-logo/barnd-logo-3.png" alt="">
-            </div>
-            <div class="single-brand-logo">
-                <img src="{{asset('assets/img/brand-logo/barnd-logo-4.png" alt="">
-            </div>
-            <div class="single-brand-logo">
-                <img src="{{asset('assets/img/brand-logo/barnd-logo-5.png" alt="">
-            </div>
-        </div>
-    </div>
-</div>
+
 @endsection
 

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Customer;
+use App\Models\User;
 use Illuminate\Http\Request;
 
 class CustomersController extends Controller
@@ -12,8 +13,10 @@ class CustomersController extends Controller
      */
     public function index()
     {
-        $customers = Customer::all(); //all() c'est une methode Eloquent qui correspond à select* from client
-        return view("adminsites.customer.index",compact("customers"));
+        // $customers = Customer::all(); //all() c'est une methode Eloquent qui correspond à select* from client
+        // return view("adminsites.customer.index",compact("customers"));
+        $customers = User::where('role', 'client')->get();
+        return view('adminsites.customer.index', compact('customers'));
     }
 
     /**
@@ -21,7 +24,7 @@ class CustomersController extends Controller
      */
     public function create()
     {
-        return view("websites.register");
+
     }
 
     /**
@@ -30,19 +33,19 @@ class CustomersController extends Controller
     public function store(Request $request)
     {
         // Controle sur les champs
-        $request->validate([
-            'fistname'=>'required|max:100|',
-            'lastname'=>'required|max:100',
-            'tel'=>'required|numeric',
-            'email'=>'required',
-            'password'=>'required',
-            'adresse'=>'required'
+        // $request->validate([
+        //     'fistname'=>'required|max:100|',
+        //     'lastname'=>'required|max:100',
+        //     'tel'=>'required|numeric',
+        //     'email'=>'required',
+        //     'password'=>'required',
+        //     'adresse'=>'required'
 
-        ]);
+        // ]);
         // Insertion dans la base de donnees
-        Customer::create($request->all());
+        // Customer::create($request->all());
 
-        return redirect()->route('websites.login');
+        // return redirect()->route('websites.connexion');
     }
 
     /**
@@ -74,6 +77,7 @@ class CustomersController extends Controller
      */
     public function destroy(Customer $customer)
     {
-        //
+        // $users->delete();
+        // return redirect()->route('adminsites.customer.index')->with("message", "Un client est supprimée avec succees");
     }
 }

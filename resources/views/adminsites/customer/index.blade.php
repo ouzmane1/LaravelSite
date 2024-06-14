@@ -17,42 +17,33 @@
       <table id="example1" class="table table-bordered table-striped">
         <thead>
             <tr>
-              <th>fistname</th>
-              <th>lastname</th>
-              <th>tel</th>
+              <th>name</th>
               <th>email</th>
-              <th>password</th>
-              <th>adresse</th>
               <th>action</th>
             </tr>
         </thead>
         <tbody>
+            @forelse ($customers as $customer)
                 <tr>
-                    <td> Ndome</td>
-                    <td> Ousmane</td>
-                    <td> +33689909856</td>
-                    <td> ousmane@gmail.com</td>
-                    <td> 123456</td>
-                    <td> Paris</td>
+                    <td> {{ $customer->name }} </td>
+                    <td> {{ $customer->email }} </td>
                     <td>
-
-                    <form class="d-inline" action="" method="POST">
-                            @csrf
-                            @method("DELETE")
+                    {{-- <form class="d-inline" action="" method="POST">
+                        @csrf
+                        @method("DELETE") --}}
 
                         <button type="submit" class="btn btn-danger" onclick="return confirm('Voulez-vous supprimer?')"> Supprimer</button>
-                        </form>
+                        {{-- </form> --}}
                     </td>
                 </tr>
+            @empty
+                <tr><td colspan="6"> No data found</td></tr>
+            @endforelse
         </tbody>
         <tfoot>
             <tr>
-                <th>fistname</th>
-              <th>lastname</th>
-              <th>tel</th>
+              <th>name</th>
               <th>email</th>
-              <th>password</th>
-              <th>adresse</th>
               <th>action</th>
             </tr>
         </tfoot>

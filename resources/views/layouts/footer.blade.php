@@ -1,27 +1,25 @@
-<footer class="footer-area bg-gray pt-100 pb-70">
+<footer class="footer-area bg-gray pt-50 pb-7">
     <div class="container">
         <div class="row">
-            <div class="col-lg-2 col-md-4 col-sm-4">
+            <div class="col-lg-4 col-md-4 col-sm-4">
                 <div class="copyright mb-30">
                     <div class="footer-logo">
-                        <a href="index.html">
-                            <img alt="" src="{{asset('assets/img/logo/logo.png')}}">
+                        <a href="{{route('websites.accueil')}}">
+                            <img alt="" src="{{asset('assets/img/logo/logo_site.png')}}">
                         </a>
                     </div>
-                    <p>© 2021 <a href="#">Flone</a>.<br> All Rights Reserved</p>
+                    <p>© 2024 <a href="{{route('websites.accueil')}}">LamicoSHOP</a>.</p>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-4 col-sm-4">
+            {{-- <div class="col-lg-2 col-md-4 col-sm-4">
                 <div class="footer-widget mb-30 ml-30">
                     <div class="footer-title">
                         <h3>ABOUT US</h3>
                     </div>
                     <div class="footer-list">
                         <ul>
-                            <li><a href="about.html">About us</a></li>
-                            <li><a href="#">Store location</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                            <li><a href="#">Orders tracking</a></li>
+                            <li><a href="{{route('websites.about')}}">About us</a></li>
+                            <li><a href="{{route('websites.contact')}}">Contact</a></li>
                         </ul>
                     </div>
                 </div>
@@ -41,7 +39,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-lg-2 col-md-6 col-sm-6">
+            <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-widget mb-30 ml-75">
                     <div class="footer-title">
                         <h3>FOLLOW US</h3>
@@ -55,8 +53,8 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-sm-6">
+            </div> --}}
+            {{-- <div class="col-lg-4 col-md-6 col-sm-6">
                 <div class="footer-widget mb-30 ml-70">
                     <div class="footer-title">
                         <h3>SUBSCRIBE</h3>
@@ -78,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </footer>

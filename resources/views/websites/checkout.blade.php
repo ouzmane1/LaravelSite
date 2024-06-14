@@ -10,13 +10,13 @@ Page checkout
         <div class="row">
             <div class="col-lg-7">
                 <div class="billing-info-wrap">
-                    <h3>Billing Details</h3>
+                    <h3>Détails de facturation</h3>
 
                 @if (Auth::check())
             <h4>Bienvenue Mr {{Auth::user()->name}},</h4>
             Vous pouvez procédé à la validation de votre commande.
                 @else
-                    <form method="POST" action="{{ route('register') }}">
+                <form method="POST" action="{{ route('register') }}">
                         @csrf
                     <div class="row">
                         <div class="col-lg-12 col-md-12">
@@ -38,7 +38,7 @@ Page checkout
                     @endif
 
 
-                    <div class="checkout-account mt-25">
+                    {{-- <div class="checkout-account mt-25">
                         <input class="checkout-toggle" type="checkbox">
                         <span>Ship to a different address?</span>
                     </div>
@@ -113,19 +113,19 @@ Page checkout
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
                 </div>
 
             </div>
 
             <div class="col-lg-5">
                 <div class="your-order-area">
-                    <h3>Your order</h3>
+                    <h3>Votre Commande</h3>
                     <div class="your-order-wrap gray-bg-4">
                         <div class="your-order-product-info">
                             <div class="your-order-top">
                                 <ul>
-                                    <li>Product</li>
+                                    <li>Produits</li>
                                     <li>Total</li>
                                 </ul>
                             </div>
@@ -146,20 +146,20 @@ Page checkout
                     @endforelse
                                 </ul>
                             </div>
-                            <div class="your-order-bottom">
+                            {{-- <div class="your-order-bottom">
                                 <ul>
                                     <li class="your-order-shipping">Shipping</li>
                                     <li>Free shipping</li>
                                 </ul>
-                            </div>
+                            </div> --}}
                             <div class="your-order-total">
                                 <ul>
                                     <li class="order-total">Total</li>
-                                    <li>${{$total}}</li>
+                                    <li>€{{$total}}</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="payment-method">
+                        {{-- <div class="payment-method">
                             <div class="payment-accordion element-mrg">
                                 <div class="panel-group" id="accordion">
                                     <div class="panel payment-accordion">
@@ -206,10 +206,10 @@ Page checkout
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> --}}
                     </div>
                     <div class="Place-order mt-25">
-                        <a class="btn-hover" href="#">Place Order</a>
+                        <a class="btn-hover" href="#">Passer Commande</a>
                     </div>
                 </div>
             </div>

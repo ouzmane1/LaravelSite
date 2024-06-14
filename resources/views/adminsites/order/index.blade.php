@@ -19,26 +19,16 @@
             <tr>
               <th>nomber</th>
               <th>date</th>
-              <th>client</th>
+              <th>customer_id</th>
               <th>statut</th>
               <th>action</th>
             </tr>
         </thead>
         <tbody>
                 <tr>
-                    <td> 01</td>
-                    <td> 02/03/2024</td>
-                    <td> Ousmane Ndome</td>
-                    <td> </td>
-                    <td>
+                    <td colspan="5"> </td>
 
-                    <form class="d-inline" action="" method="POST">
-                            @csrf
-                            @method("DELETE")
 
-                        <button type="submit" class="btn btn-danger" onclick="return confirm('Voulez-vous supprimer?')"> Supprimer</button>
-                        </form>
-                    </td>
                 </tr>
         </tbody>
         <tfoot>
