@@ -8,6 +8,19 @@ Panier
 <div class="cart-main-area pt-90 pb-100">
     <div class="container">
         <h3 class="cart-page-title">Votre Panier</h3>
+        {{-- <div class="row">
+            <div class="col-lg-12">
+                <p>Nombre de produits disponibles : <strong>{{ $panierCount }}</strong></p>
+            </div>
+        </div> --}}
+         {{-- @if ($panierCount >= 4)
+            <div class="row">
+                <div class="col-lg-12 alert alert-danger">
+                    <p class="text text-danger"> Attention vous avez {{$panierCount}} produits dans le panier</p>
+                </div>
+            </div>
+        @endif --}}
+
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                 @if(Session::has('success'))
@@ -48,7 +61,7 @@ Panier
                                 <td class="product-price-cart"><span class="amount">€{{$product['price']}}</span></td>
                                 <td class="product-quantity">
                                     <div class="cart-plus-minus">
-                                        <input class="cart-plus-minus-box" type="text" name="qtybutton" value="{{ $product['qte']}}">
+                                        <input class="cart-plus-minus-box" id="qte" type="text" name="qtybutton" value="{{ $product['qte']}}">
                                     </div>
                                 </td>
                                 <td class="product-subtotal">€{{ $product['price'] * $product['qte'] }}</td>
@@ -82,13 +95,14 @@ Panier
                 </form>
                 <div class="row">
 
-
                     <div class="col-lg-4 col-md-12">
                         <div class="grand-totall">
                             <div class="title-wrap">
-                                <h4 class="cart-bottom-title section-bg-gary-cart">Cart Total</h4>
+                                <h4 class="cart-bottom-title section-bg-gary-cart">Total du Panier</h4>
                             </div>
+
                             <h5>Total produits <span>€{{$total}}</span></h5>
+
                             {{-- <div class="total-shipping">
                                 <h5>Total shipping</h5>
                                 <ul>
@@ -100,6 +114,7 @@ Panier
                             <a href="{{route('website.checkout')}}">Passer la commande</a>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>

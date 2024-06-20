@@ -12,6 +12,7 @@ class WebsiteController extends Controller
         return view("websites.accueil");
     }
 
+
     public function About(){
         return view("websites.presentation");
     }
@@ -21,7 +22,19 @@ class WebsiteController extends Controller
         // $q = request()->input("q");
         // $products = Product::where('name', 'like',"$q");
         $products = Product::all();
-        return view("websites.produit",compact("products"));
+        $productCount = $products->count();
+        return view("websites.produit",compact("products","productCount"));
+    }
+
+    public function search(Request $request){
+        $search = $request->search;
+
+        $products = Product::where(function($query) use ($search){
+
+            $query->where('name', 'like', "%$search%");
+        })
+        ->get();
+        return view('websites.produit', compact('products', 'search'));
     }
 
     public function Contact(){
@@ -33,10 +46,10 @@ class WebsiteController extends Controller
         return view("websites.checkout",compact('products'));
     }
 
-    public function DetailProduit(){
-        $products= Product::all();
-        return view('websites.product-detail',compact("products"));
-    }
+    // public function DetailProduit(){
+    //     $products= Product::all();
+    //     return view('websites.product-detail',compact("products"));
+    // }
 
     public function Inscription(){
         return view('websites.register');

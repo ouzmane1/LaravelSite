@@ -17,6 +17,8 @@ class ProductsController extends Controller
         return view("adminsites.product.index",compact("products"));
     }
 
+
+
     /**
      * Show the form for creating a new resource.
      */

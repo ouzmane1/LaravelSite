@@ -16,7 +16,7 @@ class CategoriesController extends Controller
     public function index()
     {
         $categories = Category::all(); //all() c'est une methode Eloquent qui correspond à select* from categorie
-        return view("adminsites.categorie.index",compact("categories"));
+        return view('adminsites.categorie.index',compact("categories"));
     }
 
     /**

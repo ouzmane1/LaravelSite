@@ -57,9 +57,12 @@ Route::get('/panier', [PanierController::class,'panier'])->name('website.panier'
 Route::get('panier/delete/{indice}', [PanierController::class,'supProPanier'])->name('panier.supProPanier');
 Route::get('panier:vide', [PanierController::class,'viderPanier'])->name('panier.viderPanier');
 
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::resource('orders',OrderController::class);
 Route::resource('customers',CustomersController::class);
+
+Route::get('/search',[WebsiteController::class, 'search']);

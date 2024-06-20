@@ -14,6 +14,7 @@ class PanierController extends Controller
         if(session()->has('panier')){
             $products = session()->get("panier");
         }
+        // $panierCount = count($products);
         return view("websites.panier", compact('products'));
     }
 
@@ -50,4 +51,6 @@ class PanierController extends Controller
 
         return redirect()->back()->with("success","un nouveau produit est ajoutée dans le panier");
     }
+
+
 }
